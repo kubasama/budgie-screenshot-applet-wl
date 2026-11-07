@@ -1,0 +1,3 @@
+i18n.gettext(gettext_package,
+    preset: 'glib',
+    args: ['--keyword=Description', '--add-comments=TRANSLATORS'])

@@ -1,0 +1,6 @@
+namespace ScreenshotWl.Config {
+	public const string LIBEXECDIR = @LIBEXECDIR@;
+	public const string LOCALEDIR = @LOCALEDIR@;
+	public const string GETTEXT_PACKAGE = @GETTEXT_PACKAGE@;
+	public const string VERSION = @VERSION@;
+}

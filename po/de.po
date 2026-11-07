@@ -1,0 +1,332 @@
+# German translations for budgie-screenshot-applet-wl.
+# This file is distributed under the same license as the budgie-screenshot-applet-wl package.
+msgid ""
+msgstr ""
+"Project-Id-Version: budgie-screenshot-applet-wl\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-07 22:14+0100\n"
+"PO-Revision-Date: 2026-11-07 23:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/ScreenshotWlApplet.desktop.in:4 src/Applet.vala:39
+#: src/Capture.vala:331 src/Capture.vala:383 src/Capture.vala:395
+msgid "Screenshot"
+msgstr "Bildschirmfoto"
+
+#: data/ScreenshotWlApplet.desktop.in:5
+msgid ""
+"Capture a monitor, a window or a selection; copy to the clipboard and/or "
+"save, with a history of recent shots."
+msgstr ""
+"Bildschirmfoto eines Monitors, eines Fensters oder eines Bereichs; in die "
+"Zwischenablage kopieren und/oder speichern, mit Verlauf der letzten "
+"Aufnahmen."
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:7
+msgid "Delay in seconds before the capture"
+msgstr "Verzögerung in Sekunden vor der Aufnahme"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:11
+msgid "Include the mouse pointer"
+msgstr "Mauszeiger einbeziehen"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:15
+msgid ""
+"Save screenshots to disk (when off they are only copied to the clipboard)"
+msgstr ""
+"Bildschirmfotos speichern (wenn aus, werden sie nur in die Zwischenablage "
+"kopiert)"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:19
+msgid "Show the recent screenshots section in the popover"
+msgstr "Bereich mit den letzten Bildschirmfotos im Applet anzeigen"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:23
+msgid "Whether the recent screenshots section is expanded"
+msgstr "Ob der Bereich mit den letzten Bildschirmfotos ausgeklappt ist"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:27
+msgid "Show a random face in the panel when a screenshot is taken"
+msgstr "Nach einer Aufnahme ein zufälliges Gesicht in der Leiste anzeigen"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:35
+msgid "Mode button icons: classic (old applet) or budgie (Budgie Screenshot)"
+msgstr ""
+"Symbole der Knöpfe: classic (altes Applet) oder budgie (Budgie Screenshot)"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:39
+msgid "Flash the screen when a screenshot is taken"
+msgstr "Bildschirm bei einer Aufnahme aufblitzen lassen"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:43
+msgid "Folder to save screenshots in (empty = ~/Pictures/Screenshots)"
+msgstr ""
+"Ordner für Bildschirmfotos (leer = Bilder/Screenshots im Persönlichen "
+"Ordner)"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:47
+msgid "Copy every screenshot to the clipboard (needs wl-copy)"
+msgstr ""
+"Jedes Bildschirmfoto in die Zwischenablage kopieren (benötigt wl-copy)"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:51
+msgid "Show a notification after taking a screenshot"
+msgstr "Nach einer Aufnahme eine Benachrichtigung anzeigen"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:55
+msgid "Play the camera shutter sound (needs canberra-gtk-play)"
+msgstr "Auslösergeräusch abspielen (benötigt canberra-gtk-play)"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:59
+msgid "Re-open the applet after taking a screenshot"
+msgstr "Applet nach einer Aufnahme wieder öffnen"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:63
+msgid "Show thumbnails in the history list"
+msgstr "Vorschaubilder im Verlauf anzeigen"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:68
+msgid "Number of recent screenshots to remember"
+msgstr "Anzahl der gemerkten Bildschirmfotos"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:72
+msgid "Recent screenshot paths (newest first)"
+msgstr "Pfade der letzten Bildschirmfotos (neueste zuerst)"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:76
+msgid ""
+"Editor command, file path is appended (empty = auto-detect satty/swappy)"
+msgstr ""
+"Editor-Befehl, der Dateipfad wird angehängt (leer = satty/swappy automatisch"
+" erkennen)"
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:79
+msgid "\"Screenshot from %Y-%m-%d %H-%M-%S\""
+msgstr "\"Bildschirmfoto vom %Y-%m-%d %H-%M-%S\""
+
+#: data/io.github.budgiescreenshotwl.gschema.xml:80
+msgid "strftime-style file name (without extension)"
+msgstr "Dateiname im strftime-Format (ohne Endung)"
+
+#: src/Capture.vala:144
+msgid "wl-copy not found (install wl-clipboard)"
+msgstr "wl-copy nicht gefunden (wl-clipboard installieren)"
+
+#: src/Capture.vala:195 src/Capture.vala:225
+#, c-format
+msgid "%s not found"
+msgstr "%s nicht gefunden"
+
+#: src/Capture.vala:201
+msgid "Your grim is too old for window capture (needs 1.5+)"
+msgstr "Ihre grim-Version ist zu alt für Fensteraufnahmen (1.5+ benötigt)"
+
+#: src/Capture.vala:207
+msgid "Your compositor doesn't support capturing single windows"
+msgstr "Ihr Compositor unterstützt keine Aufnahmen einzelner Fenster"
+
+#: src/Capture.vala:272
+#, c-format
+msgid "grim failed: %s"
+msgstr "grim fehlgeschlagen: %s"
+
+#: src/Capture.vala:326
+#, c-format
+msgid "Cannot create %s"
+msgstr "%s kann nicht erstellt werden"
+
+#: src/Capture.vala:358
+msgid "Open"
+msgstr "Öffnen"
+
+#: src/Capture.vala:361
+msgid "Save"
+msgstr "Speichern"
+
+#: src/Capture.vala:364
+msgid "Show in folder"
+msgstr "Im Ordner anzeigen"
+
+#: src/Capture.vala:368
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: src/Capture.vala:376
+msgid "Copied to clipboard (not saved)"
+msgstr "In die Zwischenablage kopiert (nicht gespeichert)"
+
+#: src/Capture.vala:379
+msgid "Copied to clipboard"
+msgstr "In die Zwischenablage kopiert"
+
+#: src/Capture.vala:384
+msgid "Screenshot taken"
+msgstr "Bildschirmfoto aufgenommen"
+
+#: src/Capture.vala:396
+msgid "Screenshot failed"
+msgstr "Bildschirmfoto fehlgeschlagen"
+
+#: src/Popover.vala:88
+msgid "Delay in seconds"
+msgstr "Verzögerung in Sekunden"
+
+#: src/Popover.vala:89
+msgid "Show pointer"
+msgstr "Mauszeiger anzeigen"
+
+#: src/Popover.vala:90
+msgid "Save to disk"
+msgstr "Auf Festplatte speichern"
+
+#: src/Popover.vala:96
+msgid "Screen"
+msgstr "Bildschirm"
+
+#: src/Popover.vala:99
+msgid "Window"
+msgstr "Fenster"
+
+#: src/Popover.vala:108
+msgid "Selection"
+msgstr "Auswahl"
+
+#: src/Popover.vala:120 src/Popover.vala:358 src/Popover.vala:359
+msgid "Recent screenshots"
+msgstr "Letzte Bildschirmfotos"
+
+#: src/Popover.vala:132
+msgid "Your screenshots will show up here"
+msgstr "Hier erscheinen Ihre Bildschirmfotos"
+
+#: src/Popover.vala:150
+msgid "Clear history"
+msgstr "Verlauf leeren"
+
+#: src/Popover.vala:154
+msgid "Open folder"
+msgstr "Ordner öffnen"
+
+#: src/Popover.vala:271
+msgid "Pick a window"
+msgstr "Fenster auswählen"
+
+#: src/Popover.vala:312
+msgid "No windows open"
+msgstr "Keine Fenster geöffnet"
+
+#: src/Popover.vala:380
+msgid "Clipboard only"
+msgstr "Nur Zwischenablage"
+
+#. TRANSLATORS: strftime format, keep the % codes
+#: src/Popover.vala:478
+msgid "Today %H:%M:%S"
+msgstr "Heute %H:%M:%S"
+
+#. TRANSLATORS: strftime format, keep the % codes
+#: src/Popover.vala:481
+msgid "%Y-%m-%d %H:%M"
+msgstr "%d.%m.%Y %H:%M"
+
+#: src/SettingsView.vala:20
+msgid "Screenshot folder"
+msgstr "Ordner für Bildschirmfotos"
+
+#: src/SettingsView.vala:26
+msgid "Save to"
+msgstr "Speichern in"
+
+#: src/SettingsView.vala:28
+msgid "Save screenshots to disk"
+msgstr "Bildschirmfotos speichern"
+
+#: src/SettingsView.vala:29
+msgid "Copy to clipboard"
+msgstr "In die Zwischenablage kopieren"
+
+#: src/SettingsView.vala:29
+msgid "wl-copy not found"
+msgstr "wl-copy nicht gefunden"
+
+#: src/SettingsView.vala:33
+msgid "Budgie Classic"
+msgstr "Budgie Classic"
+
+#: src/SettingsView.vala:34
+msgid "Budgie Screenshot"
+msgstr "Budgie Screenshot"
+
+#: src/SettingsView.vala:36
+msgid "Button icons"
+msgstr "Symbole der Knöpfe"
+
+#: src/SettingsView.vala:38
+msgid "Flash the screen on capture"
+msgstr "Bildschirm bei Aufnahme aufblitzen lassen"
+
+#: src/SettingsView.vala:39
+msgid "Show notification"
+msgstr "Benachrichtigung anzeigen"
+
+#: src/SettingsView.vala:40
+msgid "Show a face in the panel after a capture"
+msgstr "Nach einer Aufnahme ein Gesicht in der Leiste zeigen"
+
+#: src/SettingsView.vala:41
+msgid "Show recent screenshots in the popover"
+msgstr "Letzte Bildschirmfotos im Applet anzeigen"
+
+#: src/SettingsView.vala:42
+msgid "Shutter sound"
+msgstr "Auslösergeräusch"
+
+#: src/SettingsView.vala:42
+msgid "canberra-gtk-play not found"
+msgstr "canberra-gtk-play nicht gefunden"
+
+#: src/SettingsView.vala:43
+msgid "Re-open applet after capture"
+msgstr "Applet nach Aufnahme wieder öffnen"
+
+#: src/SettingsView.vala:44
+msgid "Show thumbnails"
+msgstr "Vorschaubilder anzeigen"
+
+#: src/SettingsView.vala:48
+msgid "History size"
+msgstr "Größe des Verlaufs"
+
+#: src/SettingsView.vala:51
+msgid "strftime format, e.g. %Y-%m-%d_%H%M%S"
+msgstr "strftime-Format, z. B. %Y-%m-%d_%H%M%S"
+
+#: src/SettingsView.vala:53
+msgid "File name"
+msgstr "Dateiname"
+
+#: src/SettingsView.vala:56
+msgid "auto (satty / swappy)"
+msgstr "automatisch (satty / swappy)"
+
+#: src/SettingsView.vala:57
+msgid "Command used by the Edit button; the file path is appended"
+msgstr "Befehl für den Knopf Bearbeiten; der Dateipfad wird angehängt"
+
+#: src/SettingsView.vala:59
+msgid "Editor"
+msgstr "Editor"
+
+#: src/WindowList.vala:22
+msgid "Untitled window"
+msgstr "Fenster ohne Titel"
+
+#: src/WindowList.vala:48
+msgid "Could not list windows"
+msgstr "Fensterliste konnte nicht abgerufen werden"

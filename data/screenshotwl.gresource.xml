@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/io/github/budgiescreenshotwl">
+    <file>icons/screen.png</file>
+    <file>icons/screen@2x.png</file>
+    <file>icons/window.png</file>
+    <file>icons/window@2x.png</file>
+    <file>icons/selection.png</file>
+    <file>icons/selection@2x.png</file>
+    <file preprocess="xml-stripblanks">icons/symbolic/scalable/apps/bsw-selectscreen-symbolic.svg</file>
+    <file preprocess="xml-stripblanks">icons/symbolic/scalable/apps/bsw-selectwindow-symbolic.svg</file>
+    <file preprocess="xml-stripblanks">icons/symbolic/scalable/apps/bsw-selectselection-symbolic.svg</file>
+  </gresource>
+</gresources>

@@ -1,0 +1,7 @@
+data/ScreenshotWlApplet.desktop.in
+data/io.github.budgiescreenshotwl.gschema.xml
+src/Applet.vala
+src/Capture.vala
+src/Popover.vala
+src/SettingsView.vala
+src/WindowList.vala

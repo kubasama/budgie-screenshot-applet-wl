@@ -1,0 +1,33 @@
+# Solus package recipe. After tagging a release, put the tarball's sha256
+# below:  curl -sL <url> | sha256sum
+# (packaging/make-eopkg.sh builds from the local folder instead.)
+name       : budgie-screenshot-applet-wl
+version    : 0.6.0
+release    : 1
+source     :
+    - https://github.com/kubasama/budgie-screenshot-applet-wl/archive/refs/tags/v0.6.0.tar.gz : SHA256_OF_TARBALL
+homepage   : https://github.com/kubasama/budgie-screenshot-applet-wl
+license    : GPL-2.0-or-later
+component  : desktop.budgie
+summary    : Screenshot applet for the Budgie panel (Wayland)
+description: |
+    Take a screenshot of a monitor, a window or a selection from the Budgie panel.
+    Copies to the clipboard and/or saves to disk, and keeps a list of recent screenshots.
+builddeps  :
+    - pkgconfig(budgie-3.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libpeas-2)
+    - pkgconfig(wayland-client)
+    - pkgconfig(gtk-layer-shell-0)
+    - pkgconfig(wayland-scanner)
+    - vala
+rundeps    :
+    - grim
+    - slurp
+    - wl-clipboard
+setup      : |
+    %meson_configure -Dplugin_dir=/usr/lib/budgie-desktop/plugins/io.github.budgiescreenshotwl
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

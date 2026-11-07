@@ -1,0 +1,7 @@
+[Plugin]
+Module=screenshotwlapplet
+Name=Screenshot
+Description=Capture a monitor, a window or a selection; copy to the clipboard and/or save, with a history of recent shots.
+Copyright=Icons (C) 2016-2017 Stefan Ric and Budgie Desktop Developers
+Website=@WEBSITE@
+Icon=camera-photo-symbolic

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="budgie-screenshot-applet-wl">
+  <schema id="io.github.budgiescreenshotwl" path="/io/github/budgiescreenshotwl/">
+    <key type="i" name="delay">
+      <range min="0" max="60"/>
+      <default>0</default>
+      <summary>Delay in seconds before the capture</summary>
+    </key>
+    <key type="b" name="include-pointer">
+      <default>false</default>
+      <summary>Include the mouse pointer</summary>
+    </key>
+    <key type="b" name="save-to-disk">
+      <default>true</default>
+      <summary>Save screenshots to disk (when off they are only copied to the clipboard)</summary>
+    </key>
+    <key type="b" name="show-history">
+      <default>true</default>
+      <summary>Show the recent screenshots section in the popover</summary>
+    </key>
+    <key type="b" name="history-expanded">
+      <default>false</default>
+      <summary>Whether the recent screenshots section is expanded</summary>
+    </key>
+    <key type="b" name="show-emoji">
+      <default>true</default>
+      <summary>Show a random face in the panel when a screenshot is taken</summary>
+    </key>
+    <key type="s" name="icon-style">
+      <choices>
+        <choice value="classic"/>
+        <choice value="budgie"/>
+      </choices>
+      <default>"classic"</default>
+      <summary>Mode button icons: classic (old applet) or budgie (Budgie Screenshot)</summary>
+    </key>
+    <key type="b" name="flash">
+      <default>false</default>
+      <summary>Flash the screen when a screenshot is taken</summary>
+    </key>
+    <key type="s" name="save-path">
+      <default>""</default>
+      <summary>Folder to save screenshots in (empty = ~/Pictures/Screenshots)</summary>
+    </key>
+    <key type="b" name="copy-to-clipboard">
+      <default>true</default>
+      <summary>Copy every screenshot to the clipboard (needs wl-copy)</summary>
+    </key>
+    <key type="b" name="show-notification">
+      <default>true</default>
+      <summary>Show a notification after taking a screenshot</summary>
+    </key>
+    <key type="b" name="play-sound">
+      <default>true</default>
+      <summary>Play the camera shutter sound (needs canberra-gtk-play)</summary>
+    </key>
+    <key type="b" name="reopen-popover">
+      <default>false</default>
+      <summary>Re-open the applet after taking a screenshot</summary>
+    </key>
+    <key type="b" name="show-thumbnails">
+      <default>true</default>
+      <summary>Show thumbnails in the history list</summary>
+    </key>
+    <key type="i" name="history-size">
+      <range min="0" max="50"/>
+      <default>10</default>
+      <summary>Number of recent screenshots to remember</summary>
+    </key>
+    <key type="as" name="history">
+      <default>[]</default>
+      <summary>Recent screenshot paths (newest first)</summary>
+    </key>
+    <key type="s" name="editor-command">
+      <default>""</default>
+      <summary>Editor command, file path is appended (empty = auto-detect satty/swappy)</summary>
+    </key>
+    <key type="s" name="filename-format">
+      <default l10n="messages">"Screenshot from %Y-%m-%d %H-%M-%S"</default>
+      <summary>strftime-style file name (without extension)</summary>
+    </key>
+  </schema>
+</schemalist>
