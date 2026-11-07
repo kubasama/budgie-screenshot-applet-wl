@@ -22,7 +22,19 @@ A panel applet for Budgie 10.10+ that takes screenshots of a monitor, a window o
 * Window capture needs grim 1.5+ and a compositor that supports toplevel capture (recent labwc)
 * Optional: `satty` or `swappy` for editing, `canberra-gtk-play` for the shutter sound
 
-## Building
+## Install (Solus)
+
+Download the `.eopkg` from the [latest release](https://github.com/kubasama/budgie-screenshot-applet-wl/releases/latest) and install it:
+
+```sh
+sudo eopkg it budgie-screenshot-applet-wl-*.eopkg
+```
+
+Log out and back in, then add **Screenshot** in *Budgie Desktop Settings → Panel → +*.
+
+Updates aren't automatic: check the Releases page for new versions.
+
+## Building from source
 
 Build dependencies: `meson`, `vala`, and the development files for `budgie-3.0`, `libpeas-2`, `gtk+-3.0`, `gtk-layer-shell-0` and `wayland-client`.
 
@@ -30,25 +42,14 @@ Build dependencies: `meson`, `vala`, and the development files for `budgie-3.0`,
 meson setup build --prefix=/usr
 ninja -C build
 sudo ninja -C build install
-budgie-panel --replace &disown
 ```
 
-Then add **Screenshot** in *Budgie Desktop Settings → Panel → +*.
-
-### Solus package
+To build an `.eopkg` instead:
 
 ```sh
 sudo eopkg it solbuild && sudo solbuild init    # one time
 ./packaging/make-eopkg.sh
-sudo eopkg it dist/budgie-screenshot-applet-wl-*.eopkg
 ```
-
-## Translating
-
-The applet uses your system language automatically.
-
-To add a language, copy `po/budgie-screenshot-applet-wl.pot` to `po/<lang>.po`, translate it, add the language code to `po/LINGUAS` and open a pull request.
-To refresh the template after changing strings, run `ninja -C build budgie-screenshot-applet-wl-pot`.
 
 ## License
 

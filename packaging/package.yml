@@ -5,7 +5,7 @@ name       : budgie-screenshot-applet-wl
 version    : 0.6.0
 release    : 1
 source     :
-    - https://github.com/kubasama/budgie-screenshot-applet-wl/archive/refs/tags/v0.6.0.tar.gz : SHA256_OF_TARBALL
+    - https://github.com/kubasama/budgie-screenshot-applet-wl/archive/refs/tags/v0.6.0.tar.gz : 307c564308d435a3c2f4a718409c4a79eaa443589d346707e965ee66a4cfea49
 homepage   : https://github.com/kubasama/budgie-screenshot-applet-wl
 license    : GPL-2.0-or-later
 component  : desktop.budgie
