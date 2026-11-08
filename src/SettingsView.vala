@@ -52,8 +52,8 @@ namespace ScreenshotWl {
 			add_row(_("File name"), fmt);
 
 			var editor = new Gtk.Entry();
-			editor.placeholder_text = _("auto (satty / swappy)");
-			editor.tooltip_text = _("Command used by the Edit button; the file path is appended");
+			editor.placeholder_text = _("off (e.g. satty)");
+			editor.tooltip_text = _("Command used by the Edit button; %f is replaced by the file path");
 			settings.bind("editor-command", editor, "text", SettingsBindFlags.DEFAULT);
 			add_row(_("Editor"), editor);
 

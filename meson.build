@@ -1,5 +1,5 @@
 project('budgie-screenshot-applet-wl', ['vala', 'c'],
-    version: '0.6.0',
+    version: '0.6.1',
     license: 'GPL-2.0-or-later',
     meson_version: '>= 0.60.0')
 

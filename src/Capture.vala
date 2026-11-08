@@ -83,7 +83,21 @@ namespace ScreenshotWl {
 			return dest;
 		}
 
-		/* Editor argv: explicit setting, else satty, else swappy, else null */
+		/* Known editors and the options that make Save/Copy work */
+		private string[]? known_editor(string program, string path) {
+			switch (Path.get_basename(program)) {
+				case "satty":
+					return { program, "--filename", path, "--output-filename", path, "--copy-command", "wl-copy" };
+				case "swappy":
+					return { program, "-f", path, "-o", path };
+				default:
+					return null;
+			}
+		}
+
+		/* Editor argv from the setting; null (editing off) when it's empty.
+		 * In the setting, %f is replaced by the file; a bare "satty" or
+		 * "swappy" gets the right options; anything else gets the path appended. */
 		public string[]? editor_argv(Settings settings, string path) {
 			string cmd = settings.get_string("editor-command").strip();
 			if (cmd != "") {
@@ -94,12 +108,21 @@ namespace ScreenshotWl {
 					warning("Bad editor command: %s", e.message);
 					return null;
 				}
-				argv += path;
+				if (argv.length == 1) {
+					var known = known_editor(argv[0], path);
+					if (known != null) return known;
+				}
+				bool placed = false;
+				for (int i = 0; i < argv.length; i++) {
+					if (argv[i].contains("%f")) {
+						argv[i] = argv[i].replace("%f", path);
+						placed = true;
+					}
+				}
+				if (!placed) argv += path;
 				return argv;
 			}
-			if (have("satty")) return { "satty", "--filename", path };
-			if (have("swappy")) return { "swappy", "-f", path };
-			return null;
+			return null; // no editor set: no Edit button
 		}
 
 		public void spawn(string[] argv) {

@@ -73,7 +73,7 @@
     </key>
     <key type="s" name="editor-command">
       <default>""</default>
-      <summary>Editor command, file path is appended (empty = auto-detect satty/swappy)</summary>
+      <summary>Editor command for the Edit button, %f is the file (empty = no Edit button)</summary>
     </key>
     <key type="s" name="filename-format">
       <default l10n="messages">"Screenshot from %Y-%m-%d %H-%M-%S"</default>

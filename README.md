@@ -20,7 +20,7 @@ A panel applet for Budgie 10.10+ that takes screenshots of a monitor, a window o
 * Budgie 10.10 or newer (Wayland session)
 * `grim`, `slurp`, `wl-clipboard`
 * Window capture needs grim 1.5+ and a compositor that supports toplevel capture (recent labwc)
-* Optional: `satty` or `swappy` for editing, `canberra-gtk-play` for the shutter sound
+* Optional: `satty` for editing (set it as the Editor in the applet settings), `canberra-gtk-play` for the shutter sound
 
 ## Install (Solus)
 
