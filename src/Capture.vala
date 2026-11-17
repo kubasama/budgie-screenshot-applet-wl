@@ -157,7 +157,7 @@ namespace ScreenshotWl {
 			var conn = yield Bus.get(BusType.SESSION);
 			yield conn.call("org.freedesktop.FileManager1", "/org/freedesktop/FileManager1",
 				"org.freedesktop.FileManager1", "ShowItems",
-				new Variant("(ass)", new string[] { uri }, ""),
+				new Variant.tuple(new Variant[] { new Variant.strv(new string[] { uri }), new Variant.string("") }),
 				null, DBusCallFlags.NONE, 3000, null);
 		}
 
